@@ -1,0 +1,235 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\amikom>git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Users\amikom>git version
+git version 2.10.2.windows.1
+
+C:\Users\amikom>d:
+
+D:\>cd xampp
+
+D:\xampp>cd htdocs
+
+D:\xampp\htdocs>cd 15.21.0884
+
+D:\xampp\htdocs\15.21.0884>cd OOP
+
+D:\xampp\htdocs\15.21.0884\OOP>git init
+Initialized empty Git repository in D:/xampp/htdocs/15.21.0884/OOP/.git/
+
+D:\xampp\htdocs\15.21.0884\OOP>git add -A
+
+D:\xampp\htdocs\15.21.0884\OOP>git commit -m "setup awal project"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+D:\xampp\htdocs\15.21.0884\OOP>git config --global user.email "novia.busiarli@st
+udents.amiom.ac.id"
+
+D:\xampp\htdocs\15.21.0884\OOP>git config --global user.name "NoviaBusiarli"
+
+D:\xampp\htdocs\15.21.0884\OOP>git commit -m "setup awal project"
+[master (root-commit) b95839d] setup awal project
+ 17 files changed, 469 insertions(+)
+ create mode 100644 d_siswa.php
+ create mode 100644 del_siswa.php
+ create mode 100644 editsiswa.php
+ create mode 100644 img/4295.png
+ create mode 100644 img/4299.png
+ create mode 100644 img/4302.png
+ create mode 100644 img/4307.png
+ create mode 100644 img/4308.png
+ create mode 100644 img/4311.png
+ create mode 100644 img/4326png
+ create mode 100644 lib/DBClass.php
+ create mode 100644 lib/age.php
+ create mode 100644 lib/m_nationality.php
+ create mode 100644 lib/m_siswa.php
+ create mode 100644 siswa.php
+ create mode 100644 t_siswa.php
+ create mode 100644 u_siswa.php
+
+D:\xampp\htdocs\15.21.0884\OOP>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\xampp\htdocs\15.21.0884\OOP>git log
+commit b95839dda9f0be8e498b1a481a85d010cea31e59
+Author: NoviaBusiarli <novia.busiarli@students.amiom.ac.id>
+Date:   Tue Dec 6 14:13:29 2016 +0700
+
+    setup awal project
+
+D:\xampp\htdocs\15.21.0884\OOP>git add -A
+
+D:\xampp\htdocs\15.21.0884\OOP>git commit -m "tambahkan komentar--> siswa.php"
+[master c2bafb7] tambahkan komentar--> siswa.php
+ 1 file changed, 3 insertions(+)
+
+D:\xampp\htdocs\15.21.0884\OOP>git log
+commit c2bafb787a6adcdc2ec785eb521da00a23eb6500
+Author: NoviaBusiarli <novia.busiarli@students.amiom.ac.id>
+Date:   Tue Dec 6 14:22:48 2016 +0700
+
+    tambahkan komentar--> siswa.php
+
+commit b95839dda9f0be8e498b1a481a85d010cea31e59
+Author: NoviaBusiarli <novia.busiarli@students.amiom.ac.id>
+Date:   Tue Dec 6 14:13:29 2016 +0700
+
+    setup awal project
+
+D:\xampp\htdocs\15.21.0884\OOP>
+
+D:\xampp\htdocs\15.21.0884\OOP>git remote add origin https://github.com/NoviaBus
+iarli/BelajarGit-0884.git
+
+D:\xampp\htdocs\15.21.0884\OOP>git push -u origin master
+Username for 'https://github.com': NoviaBusiarli
+Password for 'https://NoviaBusiarli@github.com':
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 12.35 KiB | 0 bytes/s, done.
+Total 18 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/NoviaBusiarli/BelajarGit-0884.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+D:\xampp\htdocs\15.21.0884\OOP>git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/NoviaBusiarli/BelajarGit-0884
+   c2bafb7..137ebb8  master     -> origin/master
+
+D:\xampp\htdocs\15.21.0884\OOP>git pull
+Updating c2bafb7..137ebb8
+Fast-forward
+ u_siswa.php | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+D:\xampp\htdocs\15.21.0884\OOP>git add -A
+
+D:\xampp\htdocs\15.21.0884\OOP>git commit -m "update client editsiswa.php"
+[master 9cbd4e5] update client editsiswa.php
+ 1 file changed, 3 insertions(+)
+
+D:\xampp\htdocs\15.21.0884\OOP>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+D:\xampp\htdocs\15.21.0884\OOP>git push
+Username for 'https://github.com': NoviaBusiarli
+Password for 'https://NoviaBusiarli@github.com':
+To https://github.com/NoviaBusiarli/BelajarGit-0884.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/NoviaBusiarli/BelajarGit-
+0884.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\xampp\htdocs\15.21.0884\OOP>git push
+Username for 'https://github.com': NoviaBusiarli
+Password for 'https://NoviaBusiarli@github.com':
+To https://github.com/NoviaBusiarli/BelajarGit-0884.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/NoviaBusiarli/BelajarGit-
+0884.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\xampp\htdocs\15.21.0884\OOP>git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/NoviaBusiarli/BelajarGit-0884
+   137ebb8..1b1ee4a  master     -> origin/master
+Auto-merging editsiswa.php
+CONFLICT (content): Merge conflict in editsiswa.php
+Automatic merge failed; fix conflicts and then commit the result.
+
+D:\xampp\htdocs\15.21.0884\OOP>git add -A
+
+D:\xampp\htdocs\15.21.0884\OOP>git commit -m "fix conflict editsiswa.php"
+[master 45eccc1] fix conflict editsiswa.php
+
+D:\xampp\htdocs\15.21.0884\OOP>git push
+Username for 'https://github.com': NoviaBusiarli
+Password for 'https://NoviaBusiarli@github.com':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 636 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/NoviaBusiarli/BelajarGit-0884.git
+   1b1ee4a..45eccc1  master -> master
+
+D:\xampp\htdocs\15.21.0884\OOP>
